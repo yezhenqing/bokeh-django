@@ -1,4 +1,5 @@
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/yezhenqing/1721f79073a08d032f3b1f266825815a/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/yezhenqing/8d33faf737ce56d157a437cc2e5b529d/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+
 [![GitHub Traffic](https://img.shields.io/badge/dynamic/json?color=success&label=Views&query=count&url=https://gist.githubusercontent.com/yezhenqing/a1c67df4436ca765fbea7ccac1f08573/raw/traffic.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
 
 

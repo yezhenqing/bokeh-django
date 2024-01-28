@@ -74,9 +74,10 @@ class DjangoBokehConfig(AppConfig):
             bokeh_apps.extend(url_conf.bokeh_apps)
         for p in url_conf.urlpatterns:
             if isinstance(p, (URLResolver)):
-                if hasattr(p, 'bokeh_apps'):
-                    bokeh_apps.extend(p.bokeh_apps)
+                if hasattr(p.urlconf_module, 'bokeh_apps'):
+                    bokeh_apps.extend(p.urlconf_module.bokeh_apps)
         return bokeh_apps
+
 
     @property
     def routes(self) -> RoutingConfiguration:

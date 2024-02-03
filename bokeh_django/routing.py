@@ -184,7 +184,10 @@ class RoutingConfiguration:
             self._add_new_routing(routing)
 
     def get_http_urlpatterns(self) -> List[URLPattern]:
-        return self._http_urlpatterns + [re_path(r"", get_asgi_application())]
+        # I would prefer to return _http_urlpatterns only, just mind its own business related to bokeh,
+        # leave Django to handle the get_asgi_application part
+        #return self._http_urlpatterns + [re_path(r"", get_asgi_application())]
+        return self._http_urlpatterns
 
     def get_websocket_urlpatterns(self) -> List[URLPattern]:
         return self._websocket_urlpatterns

@@ -186,8 +186,8 @@ class RoutingConfiguration:
     def get_http_urlpatterns(self) -> List[URLPattern]:
         # I would prefer to return _http_urlpatterns only, just mind its own business related to bokeh,
         # leave Django to handle the get_asgi_application part ??? why I can't do that??? check it later
-        return self._http_urlpatterns + [re_path(r"", get_asgi_application())]
-        #return self._http_urlpatterns
+        #return self._http_urlpatterns + [re_path(r"", get_asgi_application())]
+        return self._http_urlpatterns
 
     def get_websocket_urlpatterns(self) -> List[URLPattern]:
         return self._websocket_urlpatterns
